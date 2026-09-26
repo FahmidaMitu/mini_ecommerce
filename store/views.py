@@ -6,12 +6,12 @@ from .serializers import CategorySerializer, ProductSerializer, OrderSerializer
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = [permissions.AllowAny]
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = [permissions.AllowAny]
     
     # Filtering, Searching, and Ordering Setup
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]

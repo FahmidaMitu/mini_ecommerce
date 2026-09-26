@@ -7,7 +7,7 @@
 - Order API (Authenticated user orders)
 
 ## Setup Instructions
-1. Clone repository: `git clone <your-repo-url>`
+1. Clone repository: `git clone <https://github.com/FahmidaMitu/mini_ecommerce.git>`
 2. Create virtualenv: `python -m venv venv` and activate it.
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run migrations: `python manage.py migrate`
